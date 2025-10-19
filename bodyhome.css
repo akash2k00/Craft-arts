@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    padding-top: 90px;
+}
+
+#mainImg {
+    width: 1250px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#mainImg_content {
+    background-color: white;
+    /* border: 1px solid black; */
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 33.5%;
+    top: 31.1%;
+
+
+}
+
+#mainImg_content h2 {
+    word-spacing: 12px;
+}
+
+
+
+@keyframes shopAnimation {
+    0% {
+    }
+
+    100% {
+        background-color: black;color:white;
+        
+    }}
+ 
+ 
+/* .shop_button a:hover { */
+    /* animation-name: shopAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+} 
+
+.shop_button a{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    letter-spacing: 2px;
+    padding-top: 8px;
+          transition: 2s;
+
+} */
+
+.shop_button a{
+     border-bottom: 1px solid black;
+    padding: 5px;
+    letter-spacing: 2px;
+    padding-top: 8px;
+    transition-property: background-color ;
+    transition-duration:0.4s; 
+    opacity:0.8 ;
+}
+.shop_button a:hover{
+    background-color: black;
+    color: white;
+}
+/* 
+ a:hover .shop_button  {
+    animation-name: shopAnimationBg;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+} */
+
+
+
+#sub {
+    position: relative;
+}
+
+#subleftup {
+    /* margin: 0 auto;
+    margin-left: 245px; */
+    position: relative;
+    left: 245px;
+    text-align: center;
+    display: inline-block;
+
+
+}
+
+#subleftup_content {
+    text-align: center;
+    position: absolute;
+    bottom: 515px;
+    left: 150px;
+
+}
+
+#subleftup_content h2 {
+    letter-spacing: 7px;
+}
+
+#subleftup_content .shop_button {
+    position: absolute;
+    top: 230px;
+    left: 50px;
+}
+
+#subrightup {
+    /* margin-left: 775px; */
+    position: absolute;
+    top: 1px;
+    left: 780px;
+}
+
+
+#subrightup_content {
+    text-align: center;
+    /* margin-right: 750px; */
+    position: absolute;
+    top: 39px;
+    left: 70px;
+    /* bottom: 885px; */
+    /* left: 865px; */
+
+}
+
+#subrightup_content h2 {
+    letter-spacing: 7px;
+}
+
+
+
+
+#subrightup_content .shop_button {
+    position: absolute;
+    top: 230px;
+    left: 140px;
+}
+
+#subdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+#subdownleft {
+    position: absolute;
+    top: 0px;
+    display: inline-block;
+
+    left: 245px;
+}
+
+#subdownleft_content {
+    /* position: absolute; */
+    text-align: center;
+    /* left:300px;top:340px; */
+
+}
+
+#subdownleft_content h2 {
+    /* letter-spacing: 2px; */
+}
+
+#subdownleft_content h4 {
+    height: 25px;
+    width: 150px;
+    border-bottom: 1px solid black;
+    margin-left: 85px;
+}
+
+#subdownmiddle {
+    position: absolute;
+    left: 594px;
+    display: inline-block;
+
+    top: 0px;
+}
+
+#subdownmiddle_content {
+    /* position: absolute; */
+    text-align: center;
+    /* left: 650px; */
+    /* top: 340px; */
+}
+
+#subdownmiddle_content h4 {
+    height: 25px;
+    width: 120px;
+    border-bottom: 1px solid black;
+    margin-left: 94px;
+}
+
+#subdownright {
+    position: absolute;
+    left: 944.0px;
+    display: inline-block;
+
+    top: 0px;
+}
+
+#subdownright_content {
+    text-align: center;
+}
+
+#subdownright_content h4 {
+    height: 25px;
+    width: 90px;
+    border-bottom: 1px solid black;
+    margin-left: 110px;
+}

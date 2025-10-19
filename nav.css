@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+
+
+}
+
+a{text-decoration-line: none;
+color: black;}
+#navbar {
+    width: 100%;
+    height:96px;
+    background-color: white;
+    position: fixed;
+    top:0px;
+    /* border: 1px solid black;; */
+     z-index: 999;
+}
+
+.navContainer {
+    border: 1px solid black;
+    display: block;
+    /* margin-left: 130px; */
+
+    position: fixed;
+    top: 10px;
+    left: 130px;
+    z-index: 1000;
+    width: 1250px;
+    /* margin-top: 20px; */
+    border-left: none;
+    border-right: none;
+    background: white;
+    text-align: center;
+
+}
+
+.navall {
+    display: inline-block;
+    padding-top: 27px;
+    padding-bottom: 27px;
+        padding-right:28px;
+        padding-left: 28px;
+    /* padding-left: 55px; */
+    font-size: 28px;
+
+
+}
+
+/* #shop:hover>#shop_container_list {
+    display: block;
+}
+*/
+#shop_container_list {
+    position: relative;
+    left: 0px;
+    display: inline-block;
+
+}
+
+#shop_ul { 
+    display: none;
+position:absolute;
+top:70px;
+left:-6px;
+z-index:1000000;
+list-style: none;
+width:213px;
+background-color: white;
+} 
+#shop_ul li {
+    border: 1px solid black;
+padding-top:10px;
+height:30px;
+}
+
+
+#home,
+#About,
+#shop {
+    border-right: 1px solid black;
+    height: 20px;
+    width: 150px;
+    /* background-color:red; */
+}
+
+#home,
+#About,
+#shop,
+#Log,
+#cart,
+#Contact {
+    font-size: 20px;
+}
+
+#contact {}
+#shop_container_list:hover #shop_ul{
+    display:inline-block;
+}
+
+
+
