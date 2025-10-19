@@ -1,37 +1,13 @@
-
-footer{
-   position: relative;
-    top:00px;
-      background-image: url(./img/bg_footer.jpeg);
-    background-size: auto;
-    background-repeat:  repeat;
-    background-position: center;
-     width:100%;
-     /* border: 1px solid black; */
-     height:600px;
-  
-     
+* {
+    margin: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-*{margin:0px;}
 #body_container {
     width: 1251px;
-    height:859px;
+    height: 859px;
     margin-left: 130px;
     margin-top: 96px;
-    /* border: 1px solid black; */
     position: relative;
-    
 }
 
 #heading {
@@ -41,23 +17,18 @@ footer{
 
 #heading h1 {
     letter-spacing: 8px;
-    
 }
 
 .body1 {
     width: 611px;
- height:fit-content;   
+    height: fit-content;
     margin-top: 100px;
     margin-left: 320.5px;
-    /* border: 1px solid black; */
     text-align: center;
-
-
 }
 
 .body1 h2 {
     padding-bottom: 20px;
-
 }
 
 .body1 p {
@@ -67,20 +38,15 @@ footer{
 
 .body2 {
     width: 611px;
-    height:fit-content;
- 
-
+    height: fit-content;
     margin-top: 60px;
     margin-left: 320.5px;
-    /* border: 1px solid black; */
     text-align: center;
     position: absolute;
-
 }
 
 .body2 h2 {
     padding-bottom: 20px;
-
 }
 
 .body2 p {
@@ -90,19 +56,15 @@ footer{
 
 .body3 {
     width: 611px;
- height:fit-content;
-
+    height: fit-content;
     margin-top: 319px;
     margin-left: 320.5px;
-    /* border: 1px solid black; */
     text-align: center;
     position: absolute;
-
 }
 
 .body3 h2 {
     padding-bottom: 20px;
-
 }
 
 .body3 p {
@@ -113,19 +75,29 @@ footer{
 
 .body4 {
     width: 611px;
- height:fit-content; 
-    
+    height: fit-content;
     margin-top: 578px;
     margin-left: 320.5px;
-    /* border: 1px solid black; */
     text-align: center;
     position: absolute;
 }
+
 .body4 h2 {
     padding-bottom: 20px;
- 
-
 }
-.body4 li{ list-style: none;   opacity: 0.7;
-    
+
+.body4 li {
+    list-style: none;
+    opacity: 0.7;
+}
+
+footer {
+    position: relative;
+    top: 0px;
+    background-image: url(./img/bg_footer.jpeg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    height: 600px;
 }

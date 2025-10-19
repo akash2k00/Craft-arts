@@ -12,7 +12,6 @@
     margin-left: 128px;
     margin-top: 40px;
     width: 1251px;
-    /* border: 1px solid black; */
     height: fit-content;
     position: relative;
 }
@@ -25,56 +24,43 @@
     position: relative;
     top: 60px;
     RIGHT: 50px;
-    opacity: 0.50;
+    opacity: 0.55;
 }
 
 #body_container {
     margin-top: 130px;
     width: 1251px;
     height: 600px;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-
     flex-direction: row;
     flex-wrap: wrap;
-
-
 }
 
 #body_container_desk {
     margin-top: 130px;
     width: 1251px;
     height: 1060px;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#body_container_all {    margin-top: 130px;
-
+#body_container_all {
+    margin-top: 130px;
     width: 1251px;
     height: 2930px;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .card {
-    /* border: 1px solid green; */
     width: 299px;
     height: 466px;
-    /* flex-grow: 1; 
-    flex-basis: 20%; */
     justify-content: center;
-
-
 }
 
 .card h5 {
@@ -82,20 +68,18 @@
     padding-bottom: 5px;
     text-align: center;
     margin: auto;
-
     width: fit-content;
 }
 
 .card h4 {
-    /* border-bottom: 1px solid black; */
     text-align: center;
     padding-top: 5px;
     margin: auto;
     margin-bottom: 10px;
     width: fit-content;
-
 }
-.price_cut{
+
+.price_cut {
     text-decoration: line-through;
 }
 
@@ -114,13 +98,11 @@
     border: none;
     font-size: 15px;
     display: none;
-
+    cursor: pointer;
 }
 
 .card:hover .num_cart {
     display: inline-block;
-
-
 }
 
 .card:hover .add_to_cart_btn {

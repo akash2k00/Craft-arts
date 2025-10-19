@@ -2,10 +2,10 @@ body {
     padding-top: 90px;
 }
 
-#mainImg { 
-    width: 1250px; 
- margin-left:130px; 
-     position: relative;
+#mainImg {
+    width: 1250px;
+    margin-left: 130px;
+    position: relative;
 }
 
 #mainImg_content {
@@ -18,29 +18,23 @@ body {
     position: absolute;
     left: 34.5%;
     top: 33.5%;
-
-
-} 
+}
 
 #mainImg_content h1 {
     padding-top: 5px;
     letter-spacing: 4px;
-} 
+}
 
 #para_content {
-    /* margin: auto; */
-     margin-left:455px; 
-
-/* border:1px solid black; */
+    margin-left: 455px;
     height: 420px;
     width: 620px;
     text-align: center;
     display: flex;
-/* position: relative; */
-    margin-bottom:-392px;
+    margin-bottom: -392px;
 }
 
-#para_content p{
+#para_content p {
     align-items: center;
     justify-content: center;
     align-content: center;

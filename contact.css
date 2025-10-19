@@ -3,9 +3,7 @@
     height: fit-content;
     margin-left: 130px;
     margin-top: 96px;
-    /* border: 1px solid black; */
     position: relative;
-
 }
 
 #heading {
@@ -15,25 +13,19 @@
 
 #heading h1 {
     letter-spacing: 8px;
-
 }
 
 #contact_head_content {
     width: 1251px;
     height: fit-content;
-    /* border: 1px solid black; */
     margin-top: 74px;
-    /* margin-top:500px;  */
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* flex-basis:10%;  */
     justify-content: space-around;
 }
 
 .box {
-    /* border: 1px solid black; */
     width: 210px;
     height: fit-content;
     text-align: center;
@@ -41,7 +33,7 @@
 
 .box a {
     color: black;
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 .box h2 {
@@ -49,23 +41,17 @@ text-decoration: underline;
 }
 
 .box p {
-    opacity: 0.6;
+    opacity: 0.7;
 }
-
-
 
 #stockhead {
     margin-top: 100px;
     text-align: center;
     padding-bottom: 45px;
-    ;
 }
-
-
 
 #stocklist {
     width: 1251px;
-    /* border: 1px solid black; */
     height: fit-content;
     text-align: center;
 }
@@ -78,11 +64,12 @@ text-decoration: underline;
 }
 
 .stockbox {
-    /* border: 1px solid black; */
     width: fit-content;
     flex-grow: 3;
     flex-basis: 30%;
-    margin-bottom:50px;
+    margin-bottom: 50px;
+    opacity: 0.7;
+
 }
 
 
@@ -94,8 +81,5 @@ footer {
     background-repeat: repeat;
     background-position: center;
     width: 100%;
-    /* border: 1px solid black; */
     height: 600px;
-
-
 }

@@ -1,98 +1,123 @@
-footer{
-   position: relative;
-    top:391px;
-      background-image: url(./img/bg_footer.jpeg);
-    background-size: auto;
-    background-repeat:  repeat;
-    background-position: center;
-     width:100%;
-     /* border: 1px solid black; */
-     height:600px;
-  
-     
+footer {
+  position: relative;
+  top: 391px;
+  background-image: url(./img/bg_footer.jpeg);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
 }
 
 
 
-#footer{ width:1200px;
-height:447px;
-background-color: white;
-/* position:absolute; */
-display:inline-block;
-/* border:1px solid black; */
-position:absolute;
-top:95.5px;
-left:145px;
-}
-#footerhead{
-  /* background-color: red; */
-    position:absolute;
-    top:90px;
-    left:0px;
-    width:1250px;
-
-}
-#footerhead h2{    display: inline-block; 
-  /* text-align: justify; */
-  padding-left: 110px;text-align: left;
+#footer {
+  width: 1200px;
+  height: 447px;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  top: 95.5px;
+  left: 145px;
 }
 
-
-#Alphabet_col{
-   position:absolute;
-    top:170px;
-    left:112px;
-    /* width:1000px; */
-}
-#Alphabet_col h3{
-  
-    padding-bottom:10px;
+#footerhead {
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  width: 1250px;
 }
 
-#Contact_col{
-    position:absolute;
- top:172px;
-
-    left:357px;
+#footerhead h2 {
+  display: inline-block;
+  padding-left: 110px;
+  text-align: left;
 }
 
-#Contact_col h3{    padding-bottom:10px;
-}
-#Timing_col{
-     position:absolute;
- top:172px;
 
-    left:568px;
-}
-#Timing_col h3{    padding-bottom:10px;
-}
-#join_col{
-       position:absolute;
- top:160.5px;
-    left:858px;
-}
-#email_submit,#email_checkbox,#email_label,#email_input{
-  margin-top:10px;display:inline-block; 
-}
-#email_input{height:30px;width:260px;  margin-bottom:20px;
-  border:3px solid black;
+#Alphabet_col {
+  position: absolute;
+  top: 170px;
+  left: 112px;
 }
 
-#email_checkbox {border:none;position:relative;
-  bottom:16px;
-height:20px;width:20px;
+#Alphabet_col h3 {
+  padding-bottom: 10px;
 }
-#checkbox_head{display:inline-block;width:300px;padding-left:10px;padding-bottom:15px;}
+
+#Address_col {
+  position: absolute;
+  top: 172px;
+  left: 350px;
+}
+
+#Address_col h3 {
+  padding-bottom: 10px;
+}
+
+#Timing_col {
+  position: absolute;
+  top: 172px;
+  left: 554px;
+}
+
+#Timing_col h3 {
+  padding-bottom: 10px;
+}
+
+#join_col {
+  position: absolute;
+  top: 160.5px;
+  left: 830px;
+}
+
+#email_submit,
+#email_checkbox,
+#email_label,
+#email_input {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#email_input {
+  height: 30px;
+  width: 260px;
+  margin-bottom: 20px;
+  border: 3px solid black;
+}
+
+#email_checkbox {
+  border: none;
+  position: relative;
+  bottom: 16px;
+  height: 20px;
+  width: 20px;
+}
+
+#checkbox_head {
+  display: inline-block;
+  width: 300px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
 
 
-#email_submit{ height:30px;width:260px; background-color: red;border:none;color:white;}
+#email_submit {
+  height: 30px;
+  width: 260px;
+  background-color: red;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
 
+#logo_container {
+  position: absolute;
+  top: 395px;
+  left: 103px;
+}
 
-
-
-
-#logo_container{  position:absolute;
-    top:395px;
-    left:103px;
-    }
-  #logo_container a{padding-left:5px;}
+#logo_container a {
+  padding-left: 5px;
+}
