@@ -106,12 +106,23 @@
     transition: visibility 0.4s, opacity 0.4s linear;
 }
 
+.num_cart,
+.add_to_cart_btn {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.4s linear;
+}
+
 .card:hover .num_cart {
+    visibility: visible;
+    opacity: 1;
     visibility: visible;
     opacity: 1;
 }
 
 .card:hover .add_to_cart_btn {
+    visibility: visible;
+    opacity: 1;
     visibility: visible;
     opacity: 1;
 }
