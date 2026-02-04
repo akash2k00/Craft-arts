@@ -1,0 +1,208 @@
+#footerMain {
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin-top: 2%;
+  width: 100%;
+  height: 70rem;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(./img/bg_footer.jpeg);
+  background-repeat: repeat;
+}
+
+
+
+#footer {
+  position: relative;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 118rem;
+  height: 447px;
+  background-color: white;
+
+}
+
+/* footer heading */
+#footerhead {
+  display: flex;
+  align-items: end;
+  width: 90%;
+  height: 15%;
+  position: relative;
+  left: 50%;
+  margin-bottom: 4rem;
+  transform: translateX(-50%);
+  top: 10%;
+  gap: 10px;
+
+}
+/* ----- */
+
+
+/*  footer  content */
+
+
+
+#footerContent {
+  display: flex;
+  height: 50%;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+}
+
+
+.footerhead--element {
+
+  width: 30rem;
+  font-size: 2.5rem;
+}
+
+
+
+#Alphabet_col {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
+  word-spacing: 0.5rem;
+  width: 20rem;
+
+
+}
+
+#address {
+
+  width: 20rem;
+}
+
+#Address_col {
+  margin-left: 9rem;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
+}
+
+#time {
+  width: 20rem;
+  margin-left: 2rem;
+
+}
+
+#join_col {
+  margin-right: 0rem;
+  margin-left: 0rem;
+
+}
+
+#footerAlphabet {
+  font-size: 2.5rem;
+  font-weight: 900;
+  width: 25rem;
+  margin-right: 3.3rem;
+
+}
+
+
+
+#Timing_col {
+  margin-left: 7.5rem;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
+
+}
+
+#join {
+  margin-left: 5rem;
+  width: 28rem;
+
+}
+
+#join_col {
+  margin-left: 5.8rem;
+  width: 27rem;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
+}
+
+
+#email_input {
+  margin-top: 1rem;
+  height: 3.5rem;
+  width: 26rem;
+  margin-bottom: 2rem;
+  border: 3px solid black;
+  PADDING: 1REM;
+
+}
+
+.checkbox_container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#email_checkbox {
+  border: none;
+
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+
+}
+
+#checkbox_head {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+
+#email_submit {
+  height: 3rem;
+  width: 26rem;
+  background-color: red;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#logo_container {
+
+  position: relative;
+  top: 10%;
+  left: 5%;
+  word-spacing: 1.5rem;
+
+}
+
+
+.footer--2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  opacity: 0.6;
+}
+
+
+
+/*  -------------------- */

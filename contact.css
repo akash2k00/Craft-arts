@@ -1,0 +1,145 @@
+#body_container {
+    margin-top: 9rem;
+    width: 118.5rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#heading {
+    margin-top: 15rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#heading h1 {
+    letter-spacing: 8px;
+}
+
+#head_content {
+    column-gap: 21.1rem;
+    row-gap: 5rem;
+    margin-top: 74px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    text-align: center;
+}
+
+.box a {
+    color: black;
+    text-decoration: underline;
+}
+
+.box h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.box p {
+    opacity: 0.7;
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+
+}
+
+
+#form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10rem;
+    width: fit-content;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 64rem;
+}
+
+.container--inside {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.tag {
+    font-size: 1.5rem;
+
+}
+
+.Ip {
+    font-size: 1.5rem;
+    ;
+    width: 30rem;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1.5rem;
+}
+
+.Ip:focus,
+.msg-Ip:focus {
+    outline: none;
+    resize: none;
+}
+
+.message {
+    width: 100%;
+
+}
+
+.msgTag {
+    font-size: 1.5rem;
+
+}
+
+.msg-Ip {
+    padding: 1.5rem;
+    height: 8rem;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid black;
+}
+
+.submit {
+    margin-top: 0;
+    width: 98.7%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.submitBtn {
+    color: white;
+    background-color: red;
+    height: 4rem;
+    border: none;
+    font-size: 2rem;
+}
+
+.stock_body {
+    margin-bottom: 15rem;
+}
+
+
+
+
+#passError-contact,
+#emailError-contact,
+#fnameError-contact,
+#phoneError-contact,
+#lnameError-contact,
+#msgError-contact {
+    font-size: 1.5rem;
+    color: red;
+    margin-left: 1rem;
+}

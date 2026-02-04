@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft & Arts</title>
+    <link rel="icon" href="./img/Desk & Accessories/img11.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footerhome.css">
+        <link rel="stylesheet" href="shipping&returns_storepolicy.css">
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body>
+      <!--navbar -->
+
+    <header id="head">
+        <nav id="navbar">
+            <h2 class="navall" id="alphabet"><b><a href="index.html">Craft & ARTS</b></a></h2>
+            <p class="navall" id="home"><a href="index.html">Home</a></p>
+            <div id="shop_container_list">
+                <p class="navall" id="shop"><a href="allproducts.html">Shop</a></p>
+                <ul id="shop_ul">
+                    <li><a href="notebooks.html">Notebooks</a></li>
+                    <li><a href="pens&pencils.html">Pens & Pencils</a></li>
+                    <li><a href="desk&accessories.html">Desk & Accessories</a></li>
+                </ul>
+            </div>
+
+            <p class="navall" id="About"><a href="about.html">About</a></p>
+            <p class="navall" id="Contact"><a href="contact.html">Contact</a></p>
+      <p class="navall" id="Log">
+                <i class="fa-solid fa-circle-user"></i><a><span id="logBtn">Log In</span><span id="userBtn">User</span></a>
+            </p>
+            <p class="navall cartImage"><span id="cart_btn">
+                    <i class="fa-solid fa-cart-shopping" ></i></span></p>
+        </nav>
+    </header>
+    
+
+  
+  <!-- ------------------------------------------------------------ -->
+
+        <!-- body content -->       
+
+
+
+
+
+    <div id="body_container">  <div id="body_container--inside"> 
+        <div id="heading">
+            <h1>STORE POLICY</h1>
+        </div>
+        <div class="body">
+            <h2>Customer Care</h2>
+            <p>I’m a customer care section. I’m a great place to write a long text about your company and your
+                services, and, most importantly, how to contact your store with queries. Writing a detailed customer
+                care policy is a great way to build trust and reassure your customers that they can buy with
+                confidence.
+                <br><br>I'm the second paragraph in your customer care section. Click here to add your own text and
+                edit me. It’s easy. Just click “Edit Text” or double click me to add details about your policy and
+                make changes to the font. I’m a great place for you to tell a story and let your users know a little
+                more about you.
+            </p>
+        </div>
+        <div class="body">
+            <h2>Privacy & Safety</h2>
+            <p>I’m a privacy & safety policy section. I’m a great place to inform your customers about how you use,
+                store, and protect their personal information. Add details such as how you use third-party banking
+                to verify payment, the way you collect data or when will you contact users after their purchase was
+                completed successfully.
+                <br><br>Your user’s privacy is of the highest importance to your business, so take the time to write
+                an accurate and detailed policy. Use straightforward language to gain their trust and make sure they
+                keep coming back to your site!
+            </p>
+        </div>
+        <div class="body">
+            <h2>Wholesale Inquiries</h2>
+            <p>I’m a wholesale inquiries section. I’m a great place to inform other retailers about how they can
+                sell your stunning products. Use plain language and give as much information as possible in order to
+                promote your business and take it to the next level!
+                <br><br>I'm the second paragraph in your wholesale inquiries section. Click here to add your own
+                text and edit me. It’s easy. Just click “Edit Text” or double click me to add details about your
+                policy and make changes to the font. I’m a great place for you to tell a story and let your users
+                know a little more about you.
+            </p>
+        </div>
+        <div class="body">
+            <h2>Payment Methods</h2>
+            <ul>
+                <li>Credit / Debit Cards</li>
+                <li>PAYPAL</li>
+                <li>Offline Payments</li>
+            </ul>
+        </div>
+
+
+    </div></div>
+     
+    
+  <!-- ------------------------------------------------------------ -->
+
+   
+
+
+
+
+
+
+
+
+<!-- login page -->
+<section id="loginPage">
+<div class="log-In" id="logInId">
+    <h2 id="LogCloseBtn">X</h2>
+<h1>LOG-IN PAGE</h1>
+
+<form id="validationForm" onsubmit="return validateForm(event)">
+
+<label>Username : <span id="nameError"></span></label>
+<input type="text" id="nameIp" title="nameIp">
+
+<label>Email : <span id="emailError"></span></label>
+<input type="email" id="emailIp" title="emailIp">
+
+<label>Password : <span id="passError"></span></label>
+<input type="password" id="passIp" title="passIp">
+<button type="submit" class="subIp">Login</button>
+
+</form>
+</div>
+</section>
+<!-- ---------------------------------------------- -->
+
+<!-- Cart sideBar -->
+ <div class="cart close-cart" id="cartSidebar">
+        <div class="cart_head">
+            <h3>Cart (<span id="items" value="0">0</span> items)</h3>
+            <span id="close_btn">X</span>
+        </div>
+        <span class="cartItemsContainer-inside">
+            <p>Your Cart is empty.</p>
+        </span>
+            <span id="productOrder-id" class="productOrder productOrder-hide">
+                <h1>Product Ordered</h1>
+                <!-- <h1>Successfully</h1> -->
+            </span>
+
+        <div id="cartItemsContainer">
+
+        </div>
+        <div class="cart_footer">
+            <div id="cart_footerContent-id" class="cart_footer_content">
+                <div class="total_row">
+                    <p>Estimated Total</p>
+                    <span id="estimatedTotal">$0.00</span>
+                </div>
+                <p class="tax">Taxes and shipping are calculated at checkout.</p>
+                <button id="checkoutBtn">Checkout</button>
+                   <a href="checkout.html"> <button id="viewCartBtn">View Cart</button></a>
+                <div class="secure_box"><img class="secure_img" src="img/extra images/cyber-security.png"
+                        alt="secured_img">
+                    <p class="secure"> Secure Checkout</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+<!-- ---------------------------------------------- -->
+
+    
+
+<!--                        footer                      -->
+
+      <footer>
+        <div id="footerMain">
+            <div id="footer">
+                <div id="footerhead">
+                    <h1 class="footerhead--element" id="footerAlphabet"><a href="index.html">Craft & ARTS</a></h1>
+                    <h2 class="footerhead--element" id="address">Address</h2>
+                    <h2 class="footerhead--element" id="time">Opening Hours</h2>
+                    <h2 class="footerhead--element" id="join">Join Our Newsletter</h2>
+                </div>
+                <div id="footerContent">
+                    <div id="Alphabet_col">
+                        <h3><a href="about.html">About</a></h3>
+                        <h3><a href="shipping&returns.HTML">Shipping & Returns</a></h3>
+                        <h3><a href="#top">Store Policy</a></h3>
+                        <h3><a href="contact.html">Contact</a></h3>
+                    </div>
+                    <div id="Address_col">
+                        <h3>500 Terry Street</h3>
+                        <h3>San Francisco</h3>
+                        <h3>Tel: 123-456-7890</h3>
+                    </div>
+                    <div id="Timing_col">
+                        <h3> Mon - Fri: 10am - 7pm</h3>
+                        <h3>Saturday: 10am - 8pm</h3>
+                        <h3>Sunday: 10am - 7pm</h3>
+                    </div>
+                    <div id="join_col">
+                        <form><label id="email_label">Email *</label><br>
+                            <input type="email" placeholder="  Email..." id="email_input" required><br>
+                            <span class="checkbox_container">
+                                    <input type="checkbox" id="email_checkbox" title="email_checkbox">
+
+                                    <h3 id="checkbox_head">Yes, subscribe me to your newsletter.*</h3><br>
+                            </span> <input type="submit" id="email_submit"> 
+                        </form>
+                    </div>
+                </div>
+                <div id="logo_container">
+                    <a id="logo1" href="www.facebook.com"><img src="./img/facebooklogo.jpeg" alt="fb"></a>
+                    <a id="logo2" href="www.twitter.com"><img src="./img/twitterlogo.jpeg" alt="fb"></a>
+                    <a id="logo3" href="www.instagram.com"><img src="./img/instagramlogo.jpeg" alt="fb"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer--2">&copy; 2035 by Craft & ARTS</div> 
+  
+  <!-- ------------------------------------------------------------ -->
+
+   
+    <script src="cart.js"></script>
+  <script src="loginValid.js"></script>
+</body>
+
+</html>
