@@ -17,246 +17,362 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footerhome.css">
     <link rel="stylesheet" href="prodstyle.css">
+    <link rel="stylesheet" href="cart.css">
 
 </head>
 
 <body>
+      <!--navbar -->
+
     <header>
         <nav id="navbar">
-            <div class="navContainer">
-                <h2 class="navall"><b><a href="index.html">ALPHABET</b></a></h2>
-                <p class="navall" id="home"><a href="index.html">Home</a></p>
-                <div id="shop_container_list">
-                    <p class="navall" id="shop"><a href="#bodynb">Shop</a></p>
-                    <ul id="shop_ul">
-                        <li><a href="notebooks.html">Notebooks</a></li>
-                        <li><a href="pens&pencils.html">Pens & Pencils</a></li>
-                        <li><a href="desk&accessories.html">Desk & Accessories</a></li>
-                    </ul>
-                </div>
-
-                <p class="navall" id="About"><a href="about.html">About</a></p>
-                <p class="navall" id="Contact"><a href="contact.html">Contact</a></p>
-                <p class="navall" id="Log"><i class="fa-solid fa-circle-user"></i><a href="index.html">Log In</a></p>
-                <p class="navall" id="cart"><a href="index.html"><i class="fa-solid fa-cart-shopping"></i></a></p>
-
+            <h2 class="navall" id="alphabet"><b><a href="index.html">Craft & ARTS</b></a></h2>
+            <p class="navall" id="home"><a href="index.html">Home</a></p>
+            <div id="shop_container_list">
+                <p class="navall" id="shop"><a href="#top">Shop</a></p>
+                <ul id="shop_ul">
+                    <li><a href="notebooks.html">Notebooks</a></li>
+                    <li><a href="pens&pencils.html">Pens & Pencils</a></li>
+                    <li><a href="desk&accessories.html">Desk & Accessories</a></li>
+                </ul>
             </div>
+
+            <p class="navall" id="About"><a href="about.html">About</a></p>
+            <p class="navall" id="Contact"><a href="contact.html">Contact</a></p>
+             <p class="navall" id="Log">
+                <i class="fa-solid fa-circle-user"></i><a><span id="logBtn">Log In</span><span id="userBtn">User</span></a>
+            </p>
+            <p class="navall cartImage"><span id="cart_btn">
+                    <i class="fa-solid fa-cart-shopping" width="10px"></i></span></p>
         </nav>
     </header>
-    <div id="bodynb">
+
+  <!-- ------------------------------------------------------------ -->
+
+
+    <!-- body content -->
+
+    <div id="body-main">
         <h4 id="route"><a href="index.html">Home</a> > All Products</h4>
         <div id="main_container">
             <h1 id="body_head">All Products</h1>
             <span id="no_products">
                 <h5>28 products</h5>
             </span>
-            <div id="body_container_all">
-                <div class="card"><img src="img/Notebooks/img1.jpeg" alt="img1" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+            <div id="body_container">
+                <div class="card">
+                    <img src="img/Notebooks/img1.jpeg" alt="img1">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb1" data-name="I`m a product" data-price="15"
+                        data-image="img/Notebooks/img1.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="img/Notebooks/img2.jpeg" alt="img2" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$25.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+
+
+                <div class="card"><img src="img/Notebooks/img2.jpeg" alt="img2">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$25.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb2" data-name="I`m a product" data-price="25"
+                        data-image="img/Notebooks/img2.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="img/Notebooks/img3.jpeg" alt="img3" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$25.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="img/Notebooks/img3.jpeg" alt="img3">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$25.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb3" data-name="I`m a product" data-price="25"
+                        data-image="img/Notebooks/img3.jpeg ">Add to Cart</button>
                 </div>
-                <div class="card"><img src="img/Notebooks/img4.jpeg" alt="img4" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$25.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="img/Notebooks/img4.jpeg" alt="img4">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$25.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb4" data-name="I`m a product" data-price="25"
+                        data-image="img/Notebooks/img4.jpeg ">Add to Cart</button>
                 </div>
-                <div class="card"><img src="img/Notebooks/img5.jpeg" alt="img5" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$25.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="img/Notebooks/img5.jpeg" alt="img5">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$25.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb5" data-name="I`m a product" data-price="25"
+                        data-image="img/Notebooks/img5.jpeg">Add to Cart</button>
+
                 </div>
-                <div class="card"><img src="img/Notebooks/img6.jpeg" alt="img6" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$25.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="img/Notebooks/img6.jpeg" alt="img6">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$25.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb6" data-name="I`m a product" data-price="25"
+                        data-image="img/Notebooks/img6.jpeg ">Add to Cart</button>
                 </div>
-                <div class="card"><img src="img/Notebooks/img7.jpeg" alt="img7" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$25.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="img/Notebooks/img7.jpeg" alt="img7">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$25.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb7" data-name="I`m a product" data-price="25"
+                        data-image="img/Notebooks/img7.jpeg ">Add to Cart</button>
                 </div>
-                <div class="card"><img src="img/Notebooks/img8.jpeg" alt="img8" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$20.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="img/Notebooks/img8.jpeg" alt="img8">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$20.00</h4>
+                    <input type="number" value="1" min="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="nb8" data-name="I`m a product" data-price="20"
+                        data-image="img/Notebooks/img8.jpeg ">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img1.jpeg" alt="img1" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img1.jpeg" alt="img1">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp1" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img1.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img2.jpeg" alt="img2" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img2.jpeg" alt="img2">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp2" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img2.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img3.jpeg" alt="img3" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img3.jpeg" alt="img3">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp3" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img3.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img4.jpeg" alt="img4" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img4.jpeg" alt="img4">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp4" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img4.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img5.jpeg" alt="img5" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img5.jpeg" alt="img5">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp5" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img5.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img6.jpeg" alt="img6" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img6.jpeg" alt="img6">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp6" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img6.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img7.jpeg" alt="img7" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img7.jpeg" alt="img7">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp7" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img7.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Pens & Pencils/img8.jpeg" alt="img8" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Pens & Pencils/img8.jpeg" alt="img8">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="pp8" data-name="I`m a Product" data-price="15"
+                        data-image="img/Pens & Pencils/img8.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img1.jpeg" alt="img1" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$8.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img1.jpeg" alt="img1">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$8.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d1" data-name="I`m a Produce" data-price="8"
+                        data-image="img/Desk & Accessories/img1.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img2.jpeg" alt="img2" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img2.jpeg" alt="img2">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d2" data-name="I`m a Produce" data-price="15"
+                        data-image="img/Desk & Accessories/img2.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img3.jpeg" alt="img3" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$8.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img3.jpeg" alt="img3">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$8.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d3" data-name="I`m a Produce" data-price="8"
+                        data-image="img/Desk & Accessories/img3.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img4.jpeg" alt="img4" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$8.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img4.jpeg" alt="img4">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$8.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d4" data-name="I`m a Produce" data-price="8"
+                        data-image="img/Desk & Accessories/img4.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img5.jpeg" alt="img5" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$7.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img5.jpeg" alt="img5">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$7.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d5" data-name="I`m a Produce" data-price="7"
+                        data-image="img/Desk & Accessories/img5.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img6.jpeg" alt="img6" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$15.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img6.jpeg" alt="img6">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$15.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d6" data-name="I`m a Produce" data-price="15"
+                        data-image="img/Desk & Accessories/img6.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img7.jpeg" alt="img7" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4><span class="price_cut">$7.00</span> $5.60</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img7.jpeg" alt="img7">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price"><span class="price_cut">$7.00</span> $5.0</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d7" data-name="I`m a Produce" data-price="5"
+                        data-image="img/Desk & Accessories/img7.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img8.jpeg" alt="img8" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$7.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img8.jpeg" alt="img8">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$7.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d8" data-name="I`m a Produce" data-price="7"
+                        data-image="img/Desk & Accessories/img8.jpeg">Add to Cart</button>
                 </div>
-                <div class="card"><img src="./img/Desk & Accessories/img9.jpeg" alt="img1" height="310px" width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$8.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                <div class="card"><img src="./img/Desk & Accessories/img9.jpeg" alt="img1">
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$8.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d9" data-name="I`m a Produce" data-price="8"
+                        data-image="img/Desk & Accessories/img9.jpeg">Add to Cart</button>
                 </div>
                 <div class="card"><img src="./img/Desk & Accessories/img10.jpeg" alt="img2" height="310px"
                         width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$8.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$8.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d10" data-name="I`m a Produce" data-price="8"
+                        data-image="img/Desk & Accessories/img10.jpeg">Add to Cart</button>
                 </div>
                 <div class="card"><img src="./img/Desk & Accessories/img11.jpeg" alt="img3" height="310px"
                         width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$8.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$8.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d11" data-name="I`m a Produce" data-price="8"
+                        data-image="img/Desk & Accessories/img11.jpeg">Add to Cart</button>
                 </div>
                 <div class="card"><img src="./img/Desk & Accessories/img12.jpeg" alt="img4" height="310px"
                         width="310px">
-                    <h5>I'm a product</h5>
-                    <h4>$8.00</h4>
-                    <input type="number" value="1" class="num_cart"><br>
-                    <button class="add_to_cart_btn">Add to Cart</button>
+                    <h5 class="p-name">I'm a product</h5>
+                    <h4 class="p-price">$8.00</h4>
+                    <input type="number" value="1" class="num_cart" placeholder="1">
+                    <button class="add_to_cart_btn" data-id="d12" data-name="I`m a Produce" data-price="8"
+                        data-image="img/Desk & Accessories/img12.jpeg">Add to Cart</button>
                 </div>
             </div>
         </div>
+
+</div>
+
+  <!-- ------------------------------------------------------------ -->
+
+
+
+  <!-- login page -->
+<section id="loginPage">
+<div class="log-In" id="logInId">
+    <h2 id="LogCloseBtn">X</h2>
+<h1>LOG-IN PAGE</h1>
+
+<form id="validationForm" onsubmit="return validateForm(event)">
+
+<label>Username : <span id="nameError"></span></label>
+<input type="text" id="nameIp" title="nameIp">
+
+<label>Email : <span id="emailError"></span></label>
+<input type="email" id="emailIp" title="emailIp">
+
+<label>Password : <span id="passError"></span></label>
+<input type="password" id="passIp" title="passIp">
+<button type="submit" class="subIp">Login</button>
+
+</form>
+</div>
+</section>
+<!-- ---------------------------------------------- -->
+
+<!-- Cart sideBar -->
+ <div class="cart close-cart" id="cartSidebar">
+        <div class="cart_head">
+            <h3>Cart (<span id="items" value="0">0</span> items)</h3>
+            <span id="close_btn">X</span>
+        </div>
+        <span class="cartItemsContainer-inside">
+            <p>Your Cart is empty.</p>
+        </span>
+            <span id="productOrder-id" class="productOrder productOrder-hide">
+                <h1>Product Ordered</h1>
+                <!-- <h1>Successfully</h1> -->
+            </span>
+
+        <div id="cartItemsContainer">
+
+        </div>
+        <div class="cart_footer">
+            <div id="cart_footerContent-id" class="cart_footer_content">
+                <div class="total_row">
+                    <p>Estimated Total</p>
+                    <span id="estimatedTotal">$0.00</span>
+                </div>
+                <p class="tax">Taxes and shipping are calculated at checkout.</p>
+                <button id="checkoutBtn">Checkout</button>
+                   <a href="checkout.html"> <button id="viewCartBtn">View Cart</button></a>
+                <div class="secure_box"><img class="secure_img" src="img/extra images/cyber-security.png"
+                        alt="secured_img">
+                    <p class="secure"> Secure Checkout</p>
+                </div>
+            </div>
+        
+        </div>
     </div>
+    
+<!-- ---------------------------------------------- -->
+
+
+
+<!--                       footer                      -->
+
+
     <footer>
         <div id="footerMain">
             <div id="footer">
                 <div id="footerhead">
-                    <h2><a href="index.html">ALPHABET</a></h2>
-                    <h2>Address</h2>
-                    <h2>Opening Hours</h2>
-                    <h2>Join Our Newsletter</h2>
+                    <h1 class="footerhead--element" id="footerAlphabet"><a href="index.html">Craft & ARTS</a></h1>
+                    <h2 class="footerhead--element" id="address">Address</h2>
+                    <h2 class="footerhead--element" id="time">Opening Hours</h2>
+                    <h2 class="footerhead--element" id="join">Join Our Newsletter</h2>
                 </div>
-                <div id="Alphabet_col">
-                    <h3><a href="about.html">About</a></h3>
-                    <h3><a href="shipping&returns.HTML">Shipping & Returns</a></h3>
-                    <h3><a href="storePolicy.html">Store Policy</a></h3>
-                    <h3><a href="contact.html">Contact</a></h3>
-                </div>
-                <div id="Address_col">
-                    <h3>500 Terry Street</h3>
-                    <h3>San Francisco</h3>
-                    <h3>Tel: 123-456-7890</h3>
-                </div>
-                <div id="Timing_col">
-                    <h3> Mon - Fri: 10am - 7pm</h3>
-                    <h3>Saturday: 10am - 8pm</h3>
-                    <h3>Sunday: 10am - 7pm</h3>
-                </div>
-                <div id="join_col">
-                    <form><label id="email_label">Email *</label><br>
-                        <input type="email" placeholder="" id="email_input" required><br>
-                        <input type="checkbox" id="email_checkbox">
-                        <h3 id="checkbox_head">Yes, subscribe me to your newsletter.*</h3><br>
-                        <input type="submit" id="email_submit">
-                    </form>
+                <div id="footerContent">
+                    <div id="Alphabet_col">
+                        <h3><a href="about.html">About</a></h3>
+                        <h3><a href="shipping&returns.HTML">Shipping & Returns</a></h3>
+                        <h3><a href="storePolicy.html">Store Policy</a></h3>
+                        <h3><a href="contact.html">Contact</a></h3>
+                    </div>
+                    <div id="Address_col">
+                        <h3>500 Terry Street</h3>
+                        <h3>San Francisco</h3>
+                        <h3>Tel: 123-456-7890</h3>
+                    </div>
+                    <div id="Timing_col">
+                        <h3> Mon - Fri: 10am - 7pm</h3>
+                        <h3>Saturday: 10am - 8pm</h3>
+                        <h3>Sunday: 10am - 7pm</h3>
+                    </div>
+                    <div id="join_col">
+                        <form><label id="email_label">Email *</label><br>
+                            <input type="email" placeholder="  Email..." id="email_input" required><br>
+                            <span class="checkbox_container">
+                                    <input type="checkbox" id="email_checkbox" title="email_checkbox">
+
+                                    <h3 id="checkbox_head">Yes, subscribe me to your newsletter.*</h3><br>
+                            </span> <input type="submit" id="email_submit"> 
+                        </form>
+                    </div>
                 </div>
                 <div id="logo_container">
                     <a id="logo1" href="www.facebook.com"><img src="./img/facebooklogo.jpeg" alt="fb"></a>
@@ -266,6 +382,15 @@
             </div>
         </div>
     </footer>
+    <div class="footer--2">&copy; 2035 by Craft & ARTS</div>
+  
+  <!-- ------------------------------------------------------------ -->
+
+   
+  
+    <script src="cart.js"></script>
+
+  <script src="loginValid.js"></script>
 </body>
 
 </html>

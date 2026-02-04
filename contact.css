@@ -1,33 +1,32 @@
 #body_container {
-    width: 1251px;
-    height: fit-content;
-    margin-left: 130px;
-    margin-top: 96px;
+    margin-top: 9rem;
+    width: 118.5rem;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #heading {
-    padding-top: 150px;
+    margin-top: 15rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 #heading h1 {
     letter-spacing: 8px;
 }
 
-#contact_head_content {
-    width: 1251px;
-    height: fit-content;
+#head_content {
+    column-gap: 21.1rem;
+    row-gap: 5rem;
     margin-top: 74px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .box {
-    width: 210px;
-    height: fit-content;
     text-align: center;
 }
 
@@ -37,49 +36,110 @@
 }
 
 .box h2 {
-    padding-bottom: 10px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .box p {
     opacity: 0.7;
-}
-
-#stockhead {
-    margin-top: 100px;
-    text-align: center;
-    padding-bottom: 45px;
-}
-
-#stocklist {
-    width: 1251px;
-    height: fit-content;
-    text-align: center;
-}
-
-#stocklist_container {
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-around;
-
-}
-
-.stockbox {
-    width: fit-content;
-    flex-grow: 3;
-    flex-basis: 30%;
-    margin-bottom: 50px;
-    opacity: 0.7;
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
 
 }
 
 
-footer {
+#form {
     position: relative;
-    top: 107px;
-    background-image: url(./img/bg_footer.jpeg);
-    background-size: auto;
-    background-repeat: repeat;
-    background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10rem;
+    width: fit-content;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 64rem;
+}
+
+.container--inside {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.tag {
+    font-size: 1.5rem;
+
+}
+
+.Ip {
+    font-size: 1.5rem;
+    ;
+    width: 30rem;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1.5rem;
+}
+
+.Ip:focus,
+.msg-Ip:focus {
+    outline: none;
+    resize: none;
+}
+
+.message {
     width: 100%;
-    height: 600px;
+
+}
+
+.msgTag {
+    font-size: 1.5rem;
+
+}
+
+.msg-Ip {
+    padding: 1.5rem;
+    height: 8rem;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid black;
+}
+
+.submit {
+    margin-top: 0;
+    width: 98.7%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.submitBtn {
+    color: white;
+    background-color: red;
+    height: 4rem;
+    border: none;
+    font-size: 2rem;
+}
+
+.stock_body {
+    margin-bottom: 15rem;
+}
+
+
+
+
+#passError-contact,
+#emailError-contact,
+#fnameError-contact,
+#phoneError-contact,
+#lnameError-contact,
+#msgError-contact {
+    font-size: 1.5rem;
+    color: red;
+    margin-left: 1rem;
 }

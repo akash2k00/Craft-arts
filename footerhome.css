@@ -1,110 +1,183 @@
-footer {
-  position: relative;
-  top: 391px;
-  background-image: url(./img/bg_footer.jpeg);
-  background-size: auto;
-  background-repeat: repeat;
-  background-position: center;
+#footerMain {
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin-top: 2%;
   width: 100%;
-  height: 600px;
+  height: 70rem;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(./img/bg_footer.jpeg);
+  background-repeat: repeat;
 }
 
 
 
 #footer {
-  width: 1200px;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 118rem;
   height: 447px;
   background-color: white;
-  display: inline-block;
-  position: absolute;
-  top: 95.5px;
-  left: 145px;
+
 }
 
+/* footer heading */
 #footerhead {
-  position: absolute;
-  top: 90px;
-  left: 0px;
-  width: 1250px;
+  display: flex;
+  align-items: end;
+  width: 90%;
+  height: 15%;
+  position: relative;
+  left: 50%;
+  margin-bottom: 4rem;
+  transform: translateX(-50%);
+  top: 10%;
+  gap: 10px;
+
+}
+/* ----- */
+
+
+/*  footer  content */
+
+
+
+#footerContent {
+  display: flex;
+  height: 50%;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
 }
 
-#footerhead h2 {
-  display: inline-block;
-  padding-left: 110px;
-  text-align: left;
+
+.footerhead--element {
+
+  width: 30rem;
+  font-size: 2.5rem;
 }
+
 
 
 #Alphabet_col {
-  position: absolute;
-  top: 170px;
-  left: 112px;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
+  word-spacing: 0.5rem;
+  width: 20rem;
+
+
 }
 
-#Alphabet_col h3 {
-  padding-bottom: 10px;
+#address {
+
+  width: 20rem;
 }
 
 #Address_col {
-  position: absolute;
-  top: 172px;
-  left: 350px;
+  margin-left: 9rem;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
 }
 
-#Address_col h3 {
-  padding-bottom: 10px;
-}
+#time {
+  width: 20rem;
+  margin-left: 2rem;
 
-#Timing_col {
-  position: absolute;
-  top: 172px;
-  left: 554px;
-}
-
-#Timing_col h3 {
-  padding-bottom: 10px;
 }
 
 #join_col {
-  position: absolute;
-  top: 160.5px;
-  left: 830px;
+  margin-right: 0rem;
+  margin-left: 0rem;
+
 }
 
-#email_submit,
-#email_checkbox,
-#email_label,
-#email_input {
-  margin-top: 10px;
-  display: inline-block;
+#footerAlphabet {
+  font-size: 2.5rem;
+  font-weight: 900;
+  width: 25rem;
+  margin-right: 3.3rem;
+
 }
 
+
+
+#Timing_col {
+  margin-left: 7.5rem;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
+
+}
+
+#join {
+  margin-left: 5rem;
+  width: 28rem;
+
+}
+
+#join_col {
+  margin-left: 5.8rem;
+  width: 27rem;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  display: flex;
+  gap: 8%;
+  flex-direction: column;
+  opacity: 0.7;
+}
+
+
 #email_input {
-  height: 30px;
-  width: 260px;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  height: 3.5rem;
+  width: 26rem;
+  margin-bottom: 2rem;
   border: 3px solid black;
+  PADDING: 1REM;
+
+}
+
+.checkbox_container {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 #email_checkbox {
   border: none;
-  position: relative;
-  bottom: 16px;
+
   height: 20px;
   width: 20px;
+  display: inline-block;
+
 }
 
 #checkbox_head {
   display: inline-block;
-  width: 300px;
-  padding-left: 10px;
-  padding-bottom: 15px;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 
 #email_submit {
-  height: 30px;
-  width: 260px;
+  height: 3rem;
+  width: 26rem;
   background-color: red;
   border: none;
   color: white;
@@ -113,11 +186,23 @@ footer {
 }
 
 #logo_container {
-  position: absolute;
-  top: 395px;
-  left: 103px;
+
+  position: relative;
+  top: 10%;
+  left: 5%;
+  word-spacing: 1.5rem;
+
 }
 
-#logo_container a {
-  padding-left: 5px;
+
+.footer--2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+  opacity: 0.6;
 }
+
+
+
+/*  -------------------- */

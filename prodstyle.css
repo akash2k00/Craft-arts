@@ -1,6 +1,19 @@
+#body-main {
+    width: 118.5rem;
+    margin-top: 12rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 #route {
-    margin-top: 132px;
-    margin-left: 80px;
+    font-size: 1.5rem;
+    word-spacing: 0.5rem;
+
+}
+
+.greater {
+    font-size: 2rem;
 }
 
 #route a {
@@ -8,75 +21,60 @@
     color: black;
 }
 
-#main_container {
-    margin-left: 128px;
-    margin-top: 40px;
-    width: 1251px;
-    height: fit-content;
-    position: relative;
-}
-
 #body_head {
+    margin-top: 4rem;
     text-align: center;
+    font-size: 3rem;
+    word-spacing: 0.5rem;
 }
 
-#no_products {
-    position: relative;
-    top: 60px;
-    RIGHT: 50px;
+
+#no_products h5 {
+    word-spacing: 0.5rem;
+
+    margin-top: 6rem;
+
     opacity: 0.55;
+    font-size: 1.5rem;
 }
+
 
 #body_container {
-    margin-top: 130px;
-    width: 1251px;
-    height: 600px;
+    margin-top: 4rem;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#body_container_desk {
-    margin-top: 130px;
-    width: 1251px;
-    height: 1060px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#body_container_all {
-    margin-top: 130px;
-    width: 1251px;
-    height: 2930px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .card {
-    width: 299px;
-    height: 466px;
-    justify-content: center;
+    width: 28rem;
+
+}
+
+.card img {
+    width: 28.31rem;
+    height: 28.31rem;
 }
 
 .card h5 {
     border-bottom: 1px solid black;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
     text-align: center;
     margin: auto;
     width: fit-content;
+    font-size: 1.5rem;
 }
 
 .card h4 {
     text-align: center;
-    padding-top: 5px;
+    padding-top: 0.5rem;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     width: fit-content;
+    font-size: 2rem;
+
 }
 
 .price_cut {
@@ -84,18 +82,19 @@
 }
 
 .num_cart {
+    border: 0.5px solid black;
     width: 100%;
     height: 40px;
     text-align: center;
 }
 
 .add_to_cart_btn {
-    margin-top: 10px;
-    width: 101%;
+    margin-top: 1rem;
+    width: 100%;
     background-color: orangered;
     height: 40px;
     border: none;
-    font-size: 15px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -106,20 +105,9 @@
     transition: visibility 0.4s, opacity 0.4s linear;
 }
 
-.num_cart,
-.add_to_cart_btn {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.4s, opacity 0.4s linear;
-}
 
-.card:hover .num_cart {
-    visibility: visible;
-    opacity: 1;
-    visibility: visible;
-    opacity: 1;
-}
 
+.card:hover .num_cart,
 .card:hover .add_to_cart_btn {
     visibility: visible;
     opacity: 1;
