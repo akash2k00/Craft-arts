@@ -25,7 +25,7 @@
 
 
 .close-cart {
-    display: none;
+    display: none !important;
 }
 
 #close_btn:hover,
@@ -177,7 +177,6 @@
 
 #cartItemsContainer {
     height: calc(100% - 34.7rem);
-    /* adjust based on header+footer */
     overflow-y: auto;
     margin-left: 1rem;
     margin-right: 0.5rem;
@@ -319,25 +318,98 @@
 /* --------- */
 
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+
     .cart {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .cart_head {
+        flex-shrink: 0;
+    }
+
+    #cartItemsContainer {
+        flex: 1;
+        overflow-y: auto;
+        height: auto;
+        margin-bottom: 0;
     }
 
     .cart_footer {
+        position: relative;
+        bottom: auto;
         width: 100%;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        padding: 0 1rem;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+        background: white;
+    }
+
+    .cart-item {
+        width: 95%;
     }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
+
     .cart {
         width: 100%;
-        top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .cart_head {
+        flex-shrink: 0;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        height: auto;
+    }
+
+    #cartItemsContainer {
+        flex: 1;
+        overflow-y: auto;
+        height: auto;
     }
 
     .cart_footer {
+        position: relative;
+        bottom: auto;
         width: 100%;
-        top: 0;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        padding: 0 1rem 1rem 1rem;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+        background: white;
+        height: auto;
+    }
 
+    .cart-item {
+        width: 95%;
+    }
+
+    .item-image {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .item-content {
+        font-size: 14px;
+        width: 12rem;
+    }
+
+    .cartItemsContainer-inside {
+        margin-top: 8rem;
+        font-size: 18px;
+    }
+
+    .productOrder {
+        margin-top: 8rem;
+        margin-left: 2rem;
     }
 }

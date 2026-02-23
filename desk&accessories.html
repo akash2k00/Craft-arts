@@ -24,29 +24,58 @@
 
 <body>
  
- <header>
-        <!--navbar -->
-
+            <!--navbar -->
+    <header>
         <nav id="navbar">
-            <h2 class="navall" id="alphabet"><b><a href="index.html">Craft & ARTS</b></a></h2>
-            <p class="navall" id="home"><a href="index.html">Home</a></p>
-            <div id="shop_container_list">
-                <p class="navall" id="shop"><a href="allproducts.html">Shop</a></p>
-                <ul id="shop_ul">
-                    <li><a href="notebooks.html">Notebooks</a></li>
-                    <li><a href="pens&pencils.html">Pens & Pencils</a></li>
-                    <li><a href="#top">Desk & Accessories</a></li>
-                </ul>
+            <h2 class="navall" id="alphabet"><b><a href="index.html">CRAFT &amp; ARTS</a></b></h2>
+            <div id="navContents--hide">
+                <p class="navall" id="home"><a href="index.html">Home</a></p>
+                <div id="shop_container_list">
+                    <p class="navall" id="shop"><a href="allproducts.html">Shop</a></p>
+                    <ul id="shop_ul">
+                        <li><a href="notebooks.html">Notebooks</a></li>
+                        <li><a href="pens&amp;pencils.html">Pens &amp; Pencils</a></li>
+                        <li><a href="desk&amp;accessories.html">Desk &amp; Accessories</a></li>
+                    </ul>
+                </div>
+                <p class="navall" id="About"><a href="about.html">About</a></p>
+                <p class="navall" id="Contact"><a href="contact.html">Contact</a></p>
+                <p class="navall" id="Log">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a><span id="logBtn">Log In</span><span id="userBtn">User</span></a>
+                </p>
             </div>
-
-            <p class="navall" id="About"><a href="about.html">About</a></p>
-            <p class="navall" id="Contact"><a href="contact.html">Contact</a></p>
-     <p class="navall" id="Log">
-                <i class="fa-solid fa-circle-user"></i><a><span id="logBtn">Log In</span><span id="userBtn">User</span></a>
-            </p>
-            <p class="navall cartImage"><span id="cart_btn">
-                    <i class="fa-solid fa-cart-shopping" ></i></span></p>
+            <div class="nav-right">
+                <p class="navall cartImage"><span id="cart_btn"><i class="fa-solid fa-cart-shopping"></i></span></p>
+                <div id="menu_btn"><img class="menu_btn--img" src="img/extra images/menu (1).png" alt="menu"></div>
+            </div>
         </nav>
+        <div id="menu-fullbar" class="hide">
+            <div id="menu-sidebar">
+                  <div id="menu-sidebar-heading">
+                        <h2 class="navall navall-h2">CRAFT & ARTS</h2>
+                        <span id="menu-close-btn">✕</span>
+                    </div>
+                <div id="menu-sidebar--mainContents">
+                    <a href="index.html" class="menuall home">Home</a>
+                    <div id="shop_ul_sidebar_container" class="menuall shop">
+                        <span>Shop &#9662;</span>
+                        <ul class="shop_ul_sidebar" id="shop_ul_sidebarId">
+                            <li id="allProducts"><a href="allproducts.html">All Products</a></li>
+                            <li id="notebooks"><a href="notebooks.html">Notebooks</a></li>
+                            <li id="penspencils"><a href="pens&amp;pencils.html">Pens &amp; Pencils</a></li>
+                            <li><a href="desk&amp;accessories.html">Desk &amp; Accessories</a></li>
+                        </ul>
+                    </div>
+                    <a href="about.html" class="menuall">About</a>
+                    <a href="contact.html" class="menuall">Contact</a>
+                    <div class="menuall menu-log">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span id="logBtn-mobile">Log In</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
   
   <!-- ------------------------------------------------------------ -->
@@ -61,7 +90,9 @@
             <span id="no_products">
                 <h5>12 products</h5>
             </span>
-            <!-- id="body_container_desk" -->
+
+
+
             <div id="body_container">
                 <div class="card"><img src="./img/Desk & Accessories/img1.jpeg" alt="img1" >
                     <h5 class="p-name">I'm a product</h5>
@@ -267,25 +298,22 @@
     <footer>
         <div id="footerMain">
             <div id="footer">
-                <div id="footerhead">
-                    <h1 class="footerhead--element" id="footerAlphabet"><a href="index.html">Craft & ARTS</a></h1>
-                    <h2 class="footerhead--element" id="address">Address</h2>
-                    <h2 class="footerhead--element" id="time">Opening Hours</h2>
-                    <h2 class="footerhead--element" id="join">Join Our Newsletter</h2>
-                </div>
                 <div id="footerContent">
                     <div id="Alphabet_col">
+                        <h1 class="footerhead--element" id="footerAlphabet"><a href="index.html">CRAFT &amp; ARTS</a></h1>
                         <h3><a href="about.html">About</a></h3>
                         <h3><a href="shipping&returns.HTML">Shipping & Returns</a></h3>
                         <h3><a href="storePolicy.html">Store Policy</a></h3>
                         <h3><a href="contact.html">Contact</a></h3>
                     </div>
                     <div id="Address_col">
+                        <h2 class="footerhead--element" id="address">Address</h2>
                         <h3>500 Terry Street</h3>
                         <h3>San Francisco</h3>
                         <h3>Tel: 123-456-7890</h3>
                     </div>
                     <div id="Timing_col">
+                        <h2 class="footerhead--element" id="time">Opening Hours</h2>
                         <h3> Mon - Fri: 10am - 7pm</h3>
                         <h3>Saturday: 10am - 8pm</h3>
                         <h3>Sunday: 10am - 7pm</h3>
@@ -315,8 +343,10 @@
 
    
     <script src="cart.js"></script>
+    <script src="menu.js"></script>
 
   <script src="loginValid.js"></script>
+  
 </body>
 
 </html>

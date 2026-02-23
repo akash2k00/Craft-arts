@@ -1,25 +1,17 @@
 function validateForm(event) {
-
-    event.preventDefault(); //                 STOP page refresh
+    event.preventDefault();
 
     const nameIp = document.getElementById("nameIp").value.trim();
     const email = document.getElementById("emailIp").value.trim();
     const pass = document.getElementById("passIp").value.trim();
-  
-
-
 
     const nameError = document.getElementById("nameError");
     const emailError = document.getElementById("emailError");
-    const passError = document.getElementById("passError"); 
-    
-
+    const passError = document.getElementById("passError");
 
     nameError.textContent = "";
     emailError.textContent = "";
-    passError.textContent = "";   
-   
-
+    passError.textContent = "";
 
     let isValid = true;
 
@@ -29,7 +21,6 @@ function validateForm(event) {
     }
 
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
     if (email === "") {
         emailError.textContent = " Email cannot be empty.";
         isValid = false;
@@ -46,48 +37,40 @@ function validateForm(event) {
     if (isValid) {
         alert("Logged In successfully");
         document.getElementById("loginPage").style.display = "none";
-        console.log("check")
-
-       
         document.body.style.overflow = "auto";
-     userBtn.style.display="inline-block"
-logBtn.style.display="none";
+        const userBtn = document.getElementById("userBtn");
+        const logBtn = document.getElementById("logBtn");
+        if (userBtn) userBtn.style.display = "inline-block";
+        if (logBtn) logBtn.style.display = "none";
     }
 
     return true;
 }
 
 
-
-
-
-let logBtn = document.getElementById("logBtn")
-let userBtn = document.getElementById("userBtn")
-let loginPage = document.getElementById("loginPage")
-
-
-
-
-
-
-logBtn.addEventListener("click", () => {
-    
+// Open login modal 
+function openLogin() {
+    const loginPage = document.getElementById("loginPage");
+    if (!loginPage) return;
     document.body.style.overflow = "hidden";
-
-    console.log("check")
-   
-
     loginPage.style.display = "block";
+}
 
-})
+const logBtn = document.getElementById("logBtn");
+if (logBtn) {
+    logBtn.addEventListener("click", openLogin);
+}
 
+const logBtnMobile = document.getElementById("logBtn-mobile");
+if (logBtnMobile) {
+    logBtnMobile.addEventListener("click", openLogin);
+}
 
-
-document.getElementById("LogCloseBtn").addEventListener("click", () => {
-    document.getElementById("loginPage").style.display = "none";
-    console.log("check")
-
-    document.body.style.overflow = "auto";
-})
-
-
+const logCloseBtn = document.getElementById("LogCloseBtn");
+if (logCloseBtn) {
+    logCloseBtn.addEventListener("click", () => {
+        const loginPage = document.getElementById("loginPage");
+        if (loginPage) loginPage.style.display = "none";
+        document.body.style.overflow = "auto";
+    });
+}
