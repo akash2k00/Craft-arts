@@ -1,6 +1,6 @@
 #body-main {
-    width: 118.5rem;
-    margin-top: 12rem;
+  width: 100%;
+    max-width: 118.5rem;    margin-top: 12rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

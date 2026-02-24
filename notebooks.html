@@ -248,13 +248,12 @@
                         <h3>Sunday: 10am - 7pm</h3>
                     </div>
                     <div id="join_col">
-                        <form><label id="email_label">Email *</label><br>
+                        <form onsubmit="handleNewsletterSubmit(event)"><label id="email_label">Email *</label><br>
                             <input type="email" placeholder="  Email..." id="email_input" required><br>
                             <span class="checkbox_container">
-                                    <input type="checkbox" id="email_checkbox" title="email_checkbox">
-
-                                    <h3 id="checkbox_head">Yes, subscribe me to your newsletter.*</h3><br>
-                            </span> <input type="submit" id="email_submit"> 
+                                <input type="checkbox" id="email_checkbox" title="email_checkbox">
+                                <h3 id="checkbox_head">Yes, subscribe me to your newsletter.*</h3><br>
+                            </span> <input type="submit" id="email_submit"> </label>
                         </form>
                     </div>
                 </div>

@@ -61,10 +61,10 @@
         <!-- Mobile Sidebar Overlay -->
         <div id="menu-fullbar" class="hide">
             <div id="menu-sidebar">
-                 <div id="menu-sidebar-heading">
-                        <h2 class="navall navall-h2">CRAFT & ARTS</h2>
-                        <span id="menu-close-btn">✕</span>
-                    </div>
+                <div id="menu-sidebar-heading">
+                    <h2 class="navall navall-h2">CRAFT & ARTS</h2>
+                    <span id="menu-close-btn">✕</span>
+                </div>
                 <div id="menu-sidebar--mainContents">
                     <a href="#top" class="menuall home">Home</a>
                     <div id="shop_ul_sidebar_container" class="menuall shop">
@@ -86,8 +86,8 @@
             </div>
         </div>
     </header>
-  
-  <!-- ------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------ -->
 
     <!-- body content -->
 
@@ -149,35 +149,35 @@
         </div>
 
     </div>
-  
-  <!-- ------------------------------------------------------------ -->
 
-   
-<!-- login page -->
-<section id="loginPage">
-<div class="log-In" id="logInId">
-    <h2 id="LogCloseBtn">X</h2>
-<h1>LOG-IN PAGE</h1>
+    <!-- ------------------------------------------------------------ -->
 
-<form id="validationForm" onsubmit="return validateForm(event)">
 
-<label>Username : <span id="nameError"></span></label>
-<input type="text" id="nameIp" title="nameIp">
+    <!-- login page -->
+    <section id="loginPage">
+        <div class="log-In" id="logInId">
+            <h2 id="LogCloseBtn">X</h2>
+            <h1>LOG-IN PAGE</h1>
 
-<label>Email : <span id="emailError"></span></label>
-<input type="email" id="emailIp" title="emailIp">
+            <form id="validationForm" onsubmit="return validateForm(event)">
 
-<label>Password : <span id="passError"></span></label>
-<input type="password" id="passIp" title="passIp">
-<button type="submit" class="subIp">Login</button>
+                <label>Username : <span id="nameError"></span></label>
+                <input type="text" id="nameIp" title="nameIp">
 
-</form>
-</div>
-</section>
-<!-- ---------------------------------------------- -->
+                <label>Email : <span id="emailError"></span></label>
+                <input type="email" id="emailIp" title="emailIp">
 
-<!-- Cart sideBar -->
- <div class="cart close-cart" id="cartSidebar">
+                <label>Password : <span id="passError"></span></label>
+                <input type="password" id="passIp" title="passIp">
+                <button type="submit" class="subIp">Login</button>
+
+            </form>
+        </div>
+    </section>
+    <!-- ---------------------------------------------- -->
+
+    <!-- Cart sideBar -->
+    <div class="cart close-cart" id="cartSidebar">
         <div class="cart_head">
             <h3>Cart (<span id="items" value="0">0</span> items)</h3>
             <span id="close_btn">X</span>
@@ -185,10 +185,10 @@
         <span class="cartItemsContainer-inside">
             <p>Your Cart is empty.</p>
         </span>
-            <span id="productOrder-id" class="productOrder productOrder-hide">
-                <h1>Product Ordered</h1>
-                <!-- <h1>Successfully</h1> -->
-            </span>
+        <span id="productOrder-id" class="productOrder productOrder-hide">
+            <h1>Product Ordered</h1>
+            <!-- <h1>Successfully</h1> -->
+        </span>
 
         <div id="cartItemsContainer">
 
@@ -201,20 +201,20 @@
                 </div>
                 <p class="tax">Taxes and shipping are calculated at checkout.</p>
                 <button id="checkoutBtn">Checkout</button>
-                   <a href="checkout.html"> <button id="viewCartBtn">View Cart</button></a>
+                <a href="checkout.html"> <button id="viewCartBtn">View Cart</button></a>
                 <div class="secure_box"><img class="secure_img" src="img/extra images/cyber-security.png"
                         alt="secured_img">
                     <p class="secure"> Secure Checkout</p>
                 </div>
             </div>
-        
+
         </div>
     </div>
-    
-<!-- ---------------------------------------------- -->
+
+    <!-- ---------------------------------------------- -->
 
 
-<!--                        footer                      -->
+    <!--                        footer                      -->
 
 
 
@@ -223,7 +223,8 @@
             <div id="footer">
                 <div id="footerContent">
                     <div id="Alphabet_col">
-                        <h1 class="footerhead--element" id="footerAlphabet"><a href="index.html">CRAFT &amp; ARTS</a></h1>
+                        <h1 class="footerhead--element" id="footerAlphabet"><a href="index.html">CRAFT &amp; ARTS</a>
+                        </h1>
                         <h3><a href="about.html">About</a></h3>
                         <h3><a href="shipping&amp;returns.HTML">Shipping &amp; Returns</a></h3>
                         <h3><a href="storePolicy.html">Store Policy</a></h3>
@@ -242,12 +243,12 @@
                         <h3>Sunday: 10am - 7pm</h3>
                     </div>
                     <div id="join_col">
-                        <form><label id="email_label">Email *</label><br>
+                        <form onsubmit="handleNewsletterSubmit(event)"><label id="email_label">Email *</label><br>
                             <input type="email" placeholder="  Email..." id="email_input" required><br>
-                            <span class="checkbox_container"> 
+                            <span class="checkbox_container">
                                 <input type="checkbox" id="email_checkbox" title="email_checkbox">
                                 <h3 id="checkbox_head">Yes, subscribe me to your newsletter.*</h3><br>
-                            </span> <input type="submit" id="email_submit">
+                            </span> <input type="submit" id="email_submit"> </label>
                         </form>
                     </div>
                 </div>
@@ -261,10 +262,10 @@
     </footer>
     <div class="footer--2">&copy; 2035 by CRAFT & ARTS</div>
 
-  
-  <!-- ------------------------------------------------------------ -->
 
-   
+    <!-- ------------------------------------------------------------ -->
+
+
     <script src="cart.js"></script>
     <script src="loginValid.js"></script>
     <script src="menu.js"></script>

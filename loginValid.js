@@ -74,3 +74,20 @@ if (logCloseBtn) {
         document.body.style.overflow = "auto";
     });
 }
+
+
+// footer newsletter
+
+
+function handleNewsletterSubmit(e) {
+    e.preventDefault();
+    var email = document.getElementById("email_input").value;
+    var checkbox = document.getElementById("email_checkbox").checked;
+    if (!checkbox) {
+        alert("Please agree to subscribe to the newsletter.");
+        return;
+    }
+    alert(" Thank you for subscribing! We'll be in touch at " + email);
+    document.getElementById("email_input").value = "";
+    document.getElementById("email_checkbox").checked = false;
+}

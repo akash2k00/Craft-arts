@@ -3,8 +3,9 @@
 }
 
 #mainImg {
-    width: 118.5rem;
-    position: relative;
+    width: 100%;
+    max-width: 118.5rem;
+        position: relative;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -13,9 +14,8 @@
 }
 
 #mainImg img {
-    width: 118.5rem;
-
-}
+    width: 100%;
+    max-width: 118.5rem;}
 
 #mainImg_content {
     background-color: white;
@@ -55,8 +55,9 @@
 }
 
 #subContainerUp {
-    width: 118.5rem;
-    position: relative;
+ width: 100%;
+    max-width: 118.5rem;
+        position: relative;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 3%;
@@ -106,7 +107,8 @@
 
 
 #subContainerDown {
-    width: 102.5rem;
+     width: 100%;
+    max-width: 102.5rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -145,10 +147,6 @@
 #subdownleft_content h3 {
     font-size: 2rem;
 }
-
-/* ====================================== */
-/* RESPONSIVE DESIGN - MEDIA QUERIES      */
-/* ====================================== */
 
 @media (max-width: 768px) {
   .container {

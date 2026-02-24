@@ -99,7 +99,7 @@
 }
 
 .cart_footer {
-    height: 24rem;
+    height: auto;
     z-index: 1000;
     position: fixed;
     bottom: 0;
@@ -186,7 +186,7 @@
 .cartItemsContainer-inside {
     text-align: center;
     display: none;
-    margin-top: 25rem;
+    margin-top: 5rem;
     font-size: 25px;
     animation-name: emptyAnimation;
     animation-duration: 0.5s;
@@ -220,8 +220,8 @@
 }
 
 .item-image {
-    height: 13.8rem;
-    width: 13rem;
+    height: 10rem;
+    width: 10rem;
     border: 1px solid black;
 }
 
